@@ -55,63 +55,67 @@ public class OSGraphChart {
        *  mod2.StackOperations();
        */
       
+      
       Module03 mod3 = new Module03();
       
-      mod3.directedGraph();
-     
-      //initilized with 5 nodes
-     Module04 mod4 = new Module04(5);
-     
-     //graph implemented from module 03
-     //0->1  0->4
-     mod4.directedGraph(0, 1);
-     mod4.directedGraph(0, 4);
-     
-     //1->0 1->2 1->3 1->4
-     mod4.directedGraph(1, 0);
-     mod4.directedGraph(1, 2);
-     mod4.directedGraph(1, 3);
-     mod4.directedGraph(1, 4);
-     
-     //2->1 2->3
-     mod4.directedGraph(2, 1);
-     mod4.directedGraph(2, 3);
-    
-     //3->1 3->2 3->4
-     mod4.directedGraph(3, 1);
-     mod4.directedGraph(3, 2);
-     mod4.directedGraph(3, 4);
+      for(int i = 0; i<=4;i++){
+         mod3.directedGraph(i);
+          System.out.println("\n");
+      }
+        //initilized with 5 nodes
+       /*
+        Module04 mod4 = new Module04(5);
 
-     //4->0 4->1 4->3
-     mod4.directedGraph(4, 0);
-     mod4.directedGraph(4, 1);
-     mod4.directedGraph(4, 3);
-     
-     
-    // mod4.directedGraph();
-     System.out.println("Depth First Search: ");
-     
-     System.out.println("\nPath for node 0:");
-     mod4.depthCall(0);
-     System.out.println();
-     
-     System.out.println("\nPath for node 1:");
-     
-     mod4.depthCall(1);
-     System.out.println();
-  
-     System.out.println("\nPath for node 2:");
-     mod4.depthCall(2);
-     System.out.println();
-     
-     System.out.println("\nPath for node 3:");
-     mod4.depthCall(3);
-     System.out.println();
-     
-     System.out.println("\nPath for node 4:");
-     mod4.depthCall(4);
+        //graph implemented from module 03
+        //0->1  0->4
+        mod4.directedGraph(0, 1);
+        mod4.directedGraph(0, 4);
+
+        //1->0 1->2 1->3 1->4
+        mod4.directedGraph(1, 0);
+        mod4.directedGraph(1, 2);
+        mod4.directedGraph(1, 3);
+        mod4.directedGraph(1, 4);
+
+        //2->1 2->3
+        mod4.directedGraph(2, 1);
+        mod4.directedGraph(2, 3);
+
+        //3->1 3->2 3->4
+        mod4.directedGraph(3, 1);
+        mod4.directedGraph(3, 2);
+        mod4.directedGraph(3, 4);
+
+        //4->0 4->1 4->3
+        mod4.directedGraph(4, 0);
+        mod4.directedGraph(4, 1);
+        mod4.directedGraph(4, 3);
 
 
+       // mod4.directedGraph();
+        System.out.println("Depth First Search: ");
+
+        System.out.println("\nPath for node 0:");
+        mod4.depthCall(0);
+        System.out.println();
+
+        System.out.println("\nPath for node 1:");
+
+        mod4.depthCall(1);
+        System.out.println();
+
+        System.out.println("\nPath for node 2:");
+        mod4.depthCall(2);
+        System.out.println();
+
+        System.out.println("\nPath for node 3:");
+        mod4.depthCall(3);
+        System.out.println();
+
+        System.out.println("\nPath for node 4:");
+        mod4.depthCall(4);
+
+        */
       
      
      /*
